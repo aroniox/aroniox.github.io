@@ -71,7 +71,7 @@ a {
 }
 
 .nav__logo img {
-  height: 32px;
+  height: 36px;
   width: auto;
 }
 
@@ -515,9 +515,18 @@ section {
   }
 
   .nav__cta {
-    width: 100%;
-    text-align: center;
-    padding: 12px 20px !important;
+    background: none !important;
+    color: var(--text-muted) !important;
+    padding: 0 !important;
+    border-radius: 0 !important;
+    font-weight: 500 !important;
+    width: auto;
+    text-align: left;
+  }
+
+  .nav__cta:hover {
+    background: none !important;
+    color: var(--accent) !important;
   }
 
   .nav__hamburger {
@@ -549,8 +558,7 @@ section {
   }
 
   .hero__graphic {
-    max-width: 300px;
-    margin: 0 auto;
+    display: none;
   }
 
   /* Services */
@@ -575,8 +583,7 @@ section {
   }
 
   .about__graphic {
-    max-width: 280px;
-    margin: 0 auto;
+    display: none;
   }
 
   /* Contact */
