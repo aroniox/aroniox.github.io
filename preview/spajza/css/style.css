@@ -316,7 +316,10 @@ h1, h2, h3, h4 {
   justify-content: center;
   min-height: 100svh;
   text-align: center;
-  background: radial-gradient(ellipse at center, #1a1a14 0%, var(--color-bg) 70%);
+  background-image: url('../assets/images/spajza_restaurant.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   overflow: hidden;
 }
 
@@ -324,7 +327,12 @@ h1, h2, h3, h4 {
   content: '';
   position: absolute;
   inset: 0;
-  background: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23d4af37' fill-opacity='0.03'%3E%3Cpath d='M0 0h40v40H0z'/%3E%3C/g%3E%3C/svg%3E");
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.45) 0%,
+    rgba(0, 0, 0, 0.60) 50%,
+    rgba(13, 13, 13, 0.92) 100%
+  );
   pointer-events: none;
 }
 
@@ -619,6 +627,10 @@ h1, h2, h3, h4 {
   border: none;
   max-width: 90vw;
   max-height: 90vh;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 #lightbox::backdrop {
@@ -648,7 +660,9 @@ h1, h2, h3, h4 {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.5rem;
+  font-size: 2rem;
+  line-height: 1;
+  padding-bottom: 5px;
   color: var(--color-cream);
   background: rgba(0,0,0,0.6);
   border-radius: 50%;
@@ -658,6 +672,17 @@ h1, h2, h3, h4 {
 
 #lightbox-close:hover { color: var(--color-gold); background: rgba(0,0,0,0.9); }
 
+@media (max-width: 899px) {
+  #lightbox-close {
+    width: 36px;
+    height: 36px;
+    font-size: 1.7rem;
+    padding-top: 2px;
+    top: 1rem;
+    right: 1rem;
+  }
+}
+
 #lightbox-caption {
   position: fixed;
   bottom: 1.5rem;
@@ -665,7 +690,11 @@ h1, h2, h3, h4 {
   transform: translateX(-50%);
   font-size: 0.85rem;
   letter-spacing: 0.06em;
-  color: var(--color-muted);
+  color: var(--color-cream);
+  background: rgba(0, 0, 0, 0.55);
+  padding: 0.3rem 0.9rem;
+  border-radius: 2px;
+  white-space: nowrap;
 }
 
 /* ── 14. CONTACT ──────────────────────────────────────────── */
