@@ -37,11 +37,6 @@ window.TRANSLATIONS = {
     tab_vegan:   'Veganske jedi',
     tab_salads:  'Solatni krožnik',
 
-    /* Menu notes */
-    steak_note:     'Cena velja za 100 g; minimalna teža navedena v oklepaju.',
-    steak_footnote: '*** Vprašajte naše osebje za posebno ponudbo zorjenega mesa: zorjeno v račji masti, v ginu in rožmarinu in še več…',
-    steak_staff:    'Za posamezne reze vprašajte naše osebje.',
-
     /* Gallery */
     gallery_eyebrow: 'Galerija',
     gallery_heading: 'Umetnost na krožniku',
@@ -66,9 +61,6 @@ window.TRANSLATIONS = {
     hours_sun:          'Nedelja',
     map_heading:        'Kje smo',
 
-    /* Footer */
-    footer_copy:       '© 2026 Špajza · Gornji trg 28, Ljubljana',
-    footer_pdf:        'Prenesi jedilnik (PDF)',
   },
 
   en: {
@@ -105,11 +97,6 @@ window.TRANSLATIONS = {
     tab_vegan:   'Vegan',
     tab_salads:  'Salad Plates',
 
-    /* Menu notes */
-    steak_note:     'Price per 100 g; minimum weight shown in parentheses.',
-    steak_footnote: '*** Ask our staff about special aged meat offers: aged in duck fat, aged in gin and rosemary, and more…',
-    steak_staff:    'Ask our staff for the available cuts.',
-
     /* Gallery */
     gallery_eyebrow: 'Gallery',
     gallery_heading: 'The Art on the Plate',
@@ -134,8 +121,5 @@ window.TRANSLATIONS = {
     hours_sun:          'Sunday',
     map_heading:        'Location',
 
-    /* Footer */
-    footer_copy:       '© 2026 Špajza · Gornji trg 28, Ljubljana',
-    footer_pdf:        'Download Menu (PDF)',
   }
 };

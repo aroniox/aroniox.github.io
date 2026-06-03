@@ -60,6 +60,8 @@
   applyLanguage(saved);
 
 
+  document.getElementById('footer-year').textContent = new Date().getFullYear();
+
   /* ── B. NAVBAR ─────────────────────────────────────────── */
   const navbar    = document.getElementById('navbar');
   const hamburger = document.querySelector('.nav-hamburger');
