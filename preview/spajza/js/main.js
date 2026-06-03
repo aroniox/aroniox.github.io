@@ -38,19 +38,7 @@
       if (text !== undefined) el.textContent = text;
     });
 
-    /* 3. Placeholders */
-    document.querySelectorAll('[data-placeholder-key]').forEach(el => {
-      const key = el.dataset.placeholderKey;
-      if (key in T) el.placeholder = T[key];
-    });
-
-    /* 4. Select first option */
-    document.querySelectorAll('select option[data-key]').forEach(el => {
-      const key = el.dataset.key;
-      if (key in T) el.textContent = T[key];
-    });
-
-    /* 5. Update lightbox caption if open */
+    /* 3. Update lightbox caption if open */
     const lbCaption = document.getElementById('lightbox-caption');
     const lbImg     = document.querySelector('#lightbox img');
     if (lbCaption && lbImg && lbImg.dataset.captionKey) {
@@ -139,49 +127,7 @@
   revealEls.forEach(el => revealObserver.observe(el));
 
 
-  /* ── E. RESERVATION FORM ───────────────────────────────── */
-  const form       = document.getElementById('reservation-form');
-  const formStatus = document.getElementById('form-status');
-  const dateInput  = document.getElementById('res-date');
-
-  /* Set minimum date to today */
-  if (dateInput) {
-    dateInput.min = new Date().toISOString().split('T')[0];
-  }
-
-  const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
-  function showStatus(type, message) {
-    formStatus.textContent = message;
-    formStatus.className = `form-status visible ${type}`;
-  }
-
-  if (form) {
-    form.addEventListener('submit', e => {
-      e.preventDefault();
-      const lang = html.dataset.lang || 'sl';
-      const T    = window.TRANSLATIONS[lang];
-
-      const name  = form.elements['name'].value.trim();
-      const email = form.elements['email'].value.trim();
-      const date  = form.elements['date'].value;
-      const party = form.elements['party'].value;
-
-      if (!name || !EMAIL_RE.test(email) || !date || !party) {
-        showStatus('error', T.form_error);
-        return;
-      }
-
-      /* Demo: no backend — show success and reset */
-      /* TODO: replace with fetch POST to Formspree/Netlify Forms for production */
-      showStatus('success', T.form_success);
-      form.reset();
-      dateInput.min = new Date().toISOString().split('T')[0];
-    });
-  }
-
-
-  /* ── F. LIGHTBOX ───────────────────────────────────────── */
+  /* ── E. LIGHTBOX ───────────────────────────────────────── */
   const lightbox      = document.getElementById('lightbox');
   const lightboxImg   = lightbox ? lightbox.querySelector('img') : null;
   const lightboxClose = document.getElementById('lightbox-close');

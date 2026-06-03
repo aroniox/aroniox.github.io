@@ -13,7 +13,6 @@ window.TRANSLATIONS = {
     /* Hero */
     hero_eyebrow: 'Fine Dining · Ljubljana',
     hero_tagline: 'Kjer tradicija sreča umetnost kulinarike.',
-    hero_cta_reserve: 'Rezervirajte mizo',
     hero_cta_menu:    'Oglej si jedilnik',
     hero_scroll: 'Odkrij',
 
@@ -66,16 +65,6 @@ window.TRANSLATIONS = {
     hours_sat:          'Sobota',
     hours_sun:          'Nedelja',
     map_heading:        'Kje smo',
-    form_heading:       'Rezervacija mize',
-    form_name:          'Ime in priimek',
-    form_email:         'E-poštni naslov',
-    form_date:          'Datum',
-    form_party:         'Število gostov',
-    form_party_opt_0:   'Število gostov',
-    form_message:       'Sporočilo (neobvezno)…',
-    form_submit:        'Pošlji rezervacijo',
-    form_success:       'Vaša rezervacija je bila uspešno poslana. Kmalu vas bomo kontaktirali.',
-    form_error:         'Prosimo, izpolnite vsa obvezna polja pravilno.',
 
     /* Footer */
     footer_copy:       '© 2026 Špajza · Gornji trg 28, Ljubljana',
@@ -92,7 +81,6 @@ window.TRANSLATIONS = {
     /* Hero */
     hero_eyebrow: 'Fine Dining · Ljubljana',
     hero_tagline: 'Where tradition meets the art of fine dining.',
-    hero_cta_reserve: 'Reserve a Table',
     hero_cta_menu:    'View Menu',
     hero_scroll: 'Discover',
 
@@ -145,16 +133,6 @@ window.TRANSLATIONS = {
     hours_sat:          'Saturday',
     hours_sun:          'Sunday',
     map_heading:        'Location',
-    form_heading:       'Reserve a Table',
-    form_name:          'Full name',
-    form_email:         'Email address',
-    form_date:          'Date',
-    form_party:         'Party size',
-    form_party_opt_0:   'Party size',
-    form_message:       'Message (optional)…',
-    form_submit:        'Send Reservation',
-    form_success:       'Your reservation request has been sent. We will contact you shortly.',
-    form_error:         'Please fill in all required fields correctly.',
 
     /* Footer */
     footer_copy:       '© 2026 Špajza · Gornji trg 28, Ljubljana',

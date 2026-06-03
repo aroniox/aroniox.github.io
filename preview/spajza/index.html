@@ -63,7 +63,6 @@
 
       <div class="hero-actions reveal">
         <a href="#menu" class="btn" data-key="hero_cta_menu">Oglej si jedilnik</a>
-        <a href="#contact" class="btn btn-secondary" data-key="hero_cta_reserve">Rezervirajte mizo</a>
       </div>
     </div>
 
@@ -586,61 +585,6 @@
           </iframe>
         </div>
 
-        <!-- Reservation form -->
-        <div class="contact-block reveal">
-          <h3 data-key="form_heading">Rezervacija mize</h3>
-
-          <form id="reservation-form" novalidate>
-            <div class="form-group">
-              <label class="sr-only" for="res-name" data-key="form_name">Ime in priimek</label>
-              <input type="text" id="res-name" name="name" data-placeholder-key="form_name" placeholder="Ime in priimek"
-                required autocomplete="name">
-            </div>
-
-            <div class="form-group">
-              <label class="sr-only" for="res-email" data-key="form_email">E-poštni naslov</label>
-              <input type="email" id="res-email" name="email" data-placeholder-key="form_email"
-                placeholder="E-poštni naslov" required autocomplete="email">
-            </div>
-
-            <div class="form-row">
-              <div class="form-group">
-                <label class="sr-only" for="res-date" data-key="form_date">Datum</label>
-                <input type="date" id="res-date" name="date" required>
-              </div>
-
-              <div class="form-group">
-                <label class="sr-only" for="res-party" data-key="form_party">Število gostov</label>
-                <select id="res-party" name="party" required>
-                  <option value="" data-key="form_party_opt_0">Število gostov</option>
-                  <option value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                  <option value="4">4</option>
-                  <option value="5">5</option>
-                  <option value="6">6</option>
-                  <option value="7">7</option>
-                  <option value="8">8</option>
-                  <option value="9">9</option>
-                  <option value="10+">10+</option>
-                </select>
-              </div>
-            </div>
-
-            <div class="form-group">
-              <label class="sr-only" for="res-message" data-key="form_message">Sporočilo</label>
-              <textarea id="res-message" name="message" rows="3" data-placeholder-key="form_message"
-                placeholder="Sporočilo (neobvezno)…"></textarea>
-            </div>
-
-            <button type="submit" class="btn" style="width:100%;" data-key="form_submit">
-              Pošlji rezervacijo
-            </button>
-          </form>
-
-          <div id="form-status" role="status" aria-live="polite" class="form-status"></div>
-        </div>
-
       </div><!-- /contact-grid -->
     </div>
   </section><!-- /contact -->
@@ -651,6 +595,28 @@
 ═══════════════════════════════════════════════════════════ -->
   <footer id="footer">
     <div class="container footer-inner">
+
+      <div class="footer-brand">
+        <a href="#hero" class="footer-logo">Špajza</a>
+        <p class="footer-tagline" data-key="hero_tagline">Kjer tradicija sreča umetnost kulinarike.</p>
+      </div>
+
+      <nav class="footer-nav" aria-label="Footer navigacija">
+        <a href="#about" data-key="nav_about">O nas</a>
+        <a href="#menu" data-key="nav_menu">Jedilnik</a>
+        <a href="#gallery" data-key="nav_gallery">Galerija</a>
+        <a href="#contact" data-key="nav_contact">Kontakt</a>
+      </nav>
+
+      <div class="footer-contact">
+        <span>Gornji trg 28, 1000 Ljubljana</span>
+        <a href="tel:+38614253094">(01) 425 30 94</a>
+        <a href="mailto:info@spajza-lj.si">info@spajza-lj.si</a>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom container">
       <p class="footer-copy" data-key="footer_copy">© 2026 Špajza · Gornji trg 28, Ljubljana</p>
     </div>
   </footer>
